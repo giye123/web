@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Educacion Virtual</title>
+	<link rel="stylesheet" href="styles.css">
+	
+	<meta charset="UTF-8" />
+</head>
+<body2>
+  <div id="contenedor">
+  <header>
+    <div>
+      <img src="aprender.jpg" width="100%" alt="Logo">
+    </div>
+    <h1>Educacion Virtual</h1>
+    </header>
+	<!-- Menú -->
+	<nav>
+		<ul>
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="conferencias.html">Conferencias</a></li>
+			<li><a href="metodologias.html">Metodologias</a></li>
+			<li><a href="plataformas.html">Plataformas</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Slider -->
+	<div class="slider">
+		<div class="slide" id="slide1">
+			<img src="aprender2.jpg" width="100%" alt="Imagen 1">
+			<h2>Aprender</h2>
+		</div>
+		<div class="slide" id="slide2">
+			<img src="aprender3.jpg" width="100%" alt="Imagen 2">
+			<h2>Aprender</h2>
+		</div>
+		<div class="slide" id="slide3">
+			<img src="aprender4.jpg" width="100%" alt="Imagen 3">
+			<h2>Aprender</h2>
+		</div>
+	</div>
+	
+	<!-- Contenido -->
+	<div class="contenido">
+		<section id="inicio">
+			<h2>¿Qué es la educación virtual y cómo impacta en el aprendizaje?</h2>
+			<p>La educación se ha expandido y consolidado en todos los niveles, gracias a la integración de las tecnologías digitales en la vida diaria y en la formación, la flexibilidad de acceso y el aprendizaje activo. La transición de un salón de clases a estudiar en casa o en otro sitio, tiene como antecedentes el desarrollo de cursos por correspondencia en algunos países europeos desde hace unos 150 años.
+
+En Estados Unidos, en el año 1873, y en México, en los años 20 y 30, cuando la Secretaría de Educación Pública instauró la instrucción basada en sistema abierto a la que se le llamó Misiones culturales, pues era necesario capacitar a los profesores que estaban en zonas muy alejadas de las ciudades.
+
+Ya en la década de los 80, la comunicación satelital evolucionó, lo que permitió que la educación a distancia creciera y hubiera más interacción con los profesores, mediante llamadas telefónicas, videoconferencias, y los materiales educativos evolucionaron en audios y videocassettes.
+
+Con la expansión de la World Wide Web y el internet en los 90, el e-learning apareció y se le denominó como el aprendizaje formal que se realiza en un lugar alejado de un instructor o maestro. La digitalización ha permitido que no haya barreras geográficas para adquirir el conocimiento académico como es la licenciatura y la maestría.
+
+El Internet ha fomentado la ampliación de las metodologías del aprendizaje y ha hecho posible ofrecer una enseñanza enfocada en el estudiante y ha evolucionado en la colaboración en tiempo real.</p>
+		</section>
+	</div>
+	
+	<script>
+		// Código JavaScript para el slider
+		var slides = document.querySelectorAll('.slide');
+		var actual = 0;
+		setInterval(function() {
+			slides[actual].style.display = 'none';
+			actual = (actual + 1) % slides.length;
+			slides[actual].style.display = 'block';
+		}, 3000);
+	</script>
+	<footer>
+	  <p>©Derechos Reservados</p> 
+	  </footer>
+	  </div>
+</body2>
+</html>
+
